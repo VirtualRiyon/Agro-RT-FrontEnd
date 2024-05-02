@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <title>Registration</title>
+    <script type="text/javascript" defer src="reg.js"></script>
+</head>
+<body>
+
+        <div class="container">
+            <div class="left-side">
+               <p>welcome to our<br>website</p>
+            </div>
+            
+            <div class="content-side">
+                <div class="login-heading">
+                    <img src="Images/logo3-removebg-preview.png" alt="AgZone" title="AgZone">
+                </div>
+
+                   <div class="sub-heading">
+                    <p>Create Your Free Account</p>
+                   </div>
+                   <div id="error"></div>
+                   <div class="form">
+                    <form action="registration.php" method="post" id="form" >
+
+                        <label for="category">Choose a category:</label>
+                        <select name="category" id="category">
+                            <option value=""></option>
+                          <option value="Farmer">Farmer</option>
+                          <option value="Vendor">Vendor</option>
+                        </select> <br> <br>
+
+                        <label for="fname">Firstname</label><br>
+                        <input type="text" id="Firstname" name="UserName" class="fname" placeholder="george" required><br>
+
+                        <label for="fname">Lastname</label><br>
+                        <input type="text" id="Lastname" name="UserName" class="lname" placeholder="Sweden" required><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="email" id="Email"name="Email" class="email" placeholder="Example@email.com" required><br>
+
+                        <label for="phoneno">MobileNo</label><br>
+                        <input type="tel" id="MobileNo" name="MobileNo" class="phoneno" placeholder="07########" required><br>
+
+                        <!-- <label for="phoneno">Address</label><br>
+                        <input type="tel" id="Address" name="MobileNo" class="Address" placeholder="Enter Address" required><br> -->
+                        
+                        <label for="fname">Gender</label><br>
+                        <input type="text" id="Gender" name="UserName" class="Gender" placeholder="Sample-male" required><br>
+
+                
+                        <label for="Age">Age</label><br>
+                        <input type="number" id="Age" name="UserName" class="Age" placeholder="Sample-22" required min="10" max="80"><br>
+
+                        <label for="password">New Password</label><br>
+                        <input type="password" id="Npassword" name="Npassword" class="password" placeholder="Enter Password" required><br>
+
+                        <label for="cpassword">Confirm Password</label><br>
+                        <input type="password" id="Cpassword" name="Cpassword" class="cpassword" placeholder="Confirm Password" required><br>
+                        
+                        <button type="submit" id="submit" name="submit">Create a Account</button>
+                    
+                        
+                    </form>
+                   </div>
+
+                   <div class="sign-in-option">
+                  <p>Already have an account As A Farmer ? <a href="login.html">Sign In</a></p> <br>
+                  <p>Already have an account As A Vendor ? <a href="vendor-logun.html">Sign In</a></p>
+                   </div>
+            </div>
+        </div>
+    
+</body>
+</html>
