@@ -34,7 +34,7 @@ login.addEventListener("click", (e) => {
       }
     })
     .then((data) => {
-      window.location.href = "http://127.0.0.1:5506/Agriculture---Rental-Website/index.html"
+      window.location.href = "http://127.0.0.1:5500/index.html"
     })
     .catch(() => {
       alert("Invalid user name or password");
